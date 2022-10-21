@@ -85,11 +85,13 @@ body {
     outline: none;
     box-shadow: none;
 }
-.mywork-navbar .lists{
+
+.mywork-navbar .lists {
     background-color: rgb(7, 10, 50);
     position: relative;
     z-index: 1;
 }
+
 .mywork-navbar .navbar-brand {
     color: var(--primary-color) !important;
     font-size: 30px;
@@ -146,6 +148,9 @@ body {
 }
 
 @media(min-width:992px) {
+    .mywork-navbar .lists {
+        background-color: transparent;
+    }
     .mywork-navbar li a {
         color: var(--white-color) !important;
         font-size: 15px;
@@ -171,6 +176,7 @@ body {
 
 .mywork-navbar .dropdown-menu li {
     margin-left: 0;
+
 }
 
 .mywork-navbar .dropdown-menu li a {
