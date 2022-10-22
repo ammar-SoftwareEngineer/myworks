@@ -22,7 +22,7 @@
         <!-- start background -->
         <div class="bg pt-">
             <!-- start navbar -->
-            <nav class="mywork-navbar navbar navbar-expand-lg" arial-labal="real navigation bar">
+            <nav class="mywork-navbar navbar navbar-expand-lg sticky-top" arial-labal="real navigation bar">
                 <div class="container">
                     <a class="navbar-brand" href="#">MyWorks</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,7 +31,8 @@
                         <span class="navbar-toggler-icon toggle navbar-dark"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarClickWorks">
-                        <ul class="navbar-nav lists d-flex justify-content-center  align-items-center ms-auto mb-2 mb-md-0 mt-lg-0 mt-4">
+                        <ul
+                            class="navbar-nav lists d-flex justify-content-center  align-items-center ms-auto mb-2 mb-md-0 mt-lg-0 mt-4">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#landing">Home</a>
                             </li>
@@ -59,8 +60,10 @@
                                     <i class="fab fa fa-language fs-5"></i>
                                 </a>
                                 <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">English</a></li>
-                                    <li><a class="dropdown-item" href="#">Arabic</a></li>
+                                    <li><a class="dropdown-item english" href="#"><img src="images/great-britain.png"
+                                                alt=""> English</a></li>
+                                    <li><a class="dropdown-item arabic" href="#"><img src="images/egypt.png" alt="">
+                                            Arabic</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -69,11 +72,11 @@
                                     <i class="fa-solid fa-paint-roller fs-5"></i>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Red</a></li>
-                                    <li><a class="dropdown-item" href="#">Purpul</a></li>
-                                    <li><a class="dropdown-item" href="#">Blue</a></li>
-                                    <li><a class="dropdown-item" href="#">green</a></li>
-                                    <li><a class="dropdown-item" href="#"> orange</a></li>
+                                    <li><a class="dropdown-item red" href="#">Red</a></li>
+                                    <li><a class="dropdown-item purpul" href="#">Purpul</a></li>
+                                    <li><a class="dropdown-item blue" href="#">Blue</a></li>
+                                    <li><a class="dropdown-item green" href="#">green</a></li>
+                                    <li><a class="dropdown-item orange" href="#"> orange</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -100,6 +103,47 @@
             <!-- end landing -->
         </div>
         <!-- end background -->
+        <!-- start about -->
+        <div class="about">
+            <div class="container">
+                <div class="main-text mb-3">
+                    <h2>About <span>Me</span></h2>
+                    <p class="text-center mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum standard dummy text.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-7 col-sm-12">
+                        <div class="images-about">
+                            <img class="img-fluid mt-5" src="images/about.jpg" alt="about.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="info mt-5">
+                            <div class="info-about">
+                                <h3>Hello, I am <span>Rabea</span></h3>
+                                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias magni voluptas
+                                    consectetur maiores perferendis, quis accusamus quos dolores quae a nostrum eveniet
+                                    autem vero nulla blanditiis, earum maxime, voluptate labore!</p>
+                            </div>
+                            <div class="list-info">
+                                <ul>
+                                    <li><i class="fa-solid fa-angle-right right "></i> Name: <span>Rabea Alsabbagh</span> </li>
+                                    <li><i class="fa-solid fa-angle-right right"></i> Age: <span>22</span> </li>
+                                    <li> <i class="fa-solid fa-angle-right right"></i> Address: <span>Damascus, Syria</span> </li>
+                                    <li> <i class="fa-solid fa-angle-right right"></i> Phone: <span>+963 000 000 000</span> </li>
+                                    <li> <i class="fa-solid fa-angle-right right"></i> Email: <span>devrabea@gmail.com</span> </li>
+                                    <li><i class="fa-solid fa-angle-right right"></i> Website: <span>www.example.com</span> </li>
+                                </ul>
+                            </div>
+                            <div class="buttons">
+                                <button class="rounded-pill "><a href="">Download CV</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end about -->
         <!-- ############################################### -->
         <!-- scripts -->
         <script src="js/all.min.js"></script>
@@ -108,7 +152,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script>
             var typed = new Typed(".auto-type", {
-                strings: ["Frontend Developer", "Designer" , "Freelancer"],
+                strings: ["Frontend Developer", "Designer", "Freelancer"],
                 typeSpeed: 80,
                 backSpeed: 50,
                 loop: true
