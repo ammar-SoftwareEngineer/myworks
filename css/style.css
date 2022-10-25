@@ -65,7 +65,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 .main-text::after {
@@ -78,7 +77,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 20px;
-
 }
 
 .main-text h2 {
@@ -361,8 +359,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-
-
 }
 
 .landing .buttons button {
@@ -415,28 +411,11 @@ body {
     padding-bottom: 80px;
 }
 
-
 .about .images-about img {
-
     border: 5px solid var(--black-color);
     border-radius: 15px;
 }
 
-.about .images-about {
-    position: relative;
-
-}
-
-.about .images-about::before {
-    content: "";
-    position: absolute;
-    background-color: var(--primary-color);
-    border-radius: 15px;
-    height: 20%;
-    top: 100%;
-    left: 100%;
-    z-index: 10;
-}
 
 @media(min-width:768px) {
     .about .images-about img {
@@ -572,6 +551,41 @@ body {
 }
 
 /* end about */
+/* start services */
+.services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f7f7f7;
+}
+.services .box{
+    background-color: var(--white-color);
+    padding: 20px 10px;
+    box-shadow: 1px 1px 10px 0px gray ;
+}
+.services .box .icon{
+    background-color: #f7f7f7;
+    border-radius: 100%;
+    padding: 20px;
+    color: var(--primary-color);
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.services .box .icon:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.services .box:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.services .box h3{
+    font-size: 19px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+/* end services */
 /*start keyframes */
 
 
