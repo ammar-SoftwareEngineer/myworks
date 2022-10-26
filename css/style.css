@@ -623,7 +623,8 @@ body {
 .resume .box-resume::before {
     content: "";
     position: absolute;
-    border: 1px solid var(--primary-color);
+    height: 2px;
+    background-color: var(--primary-color);
     width: 85%;
     top: 99%;
     left: 50%;
