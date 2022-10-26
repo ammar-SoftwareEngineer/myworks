@@ -561,7 +561,7 @@ body {
 .services .box {
     background-color: var(--white-color);
     padding: 20px 10px;
-    box-shadow: 1px 1px 10px 0px gray;
+    box-shadow: 0 0 5px 0 #cdcdcd;
     overflow: hidden;
     margin-top: 20px;
 }
@@ -595,6 +595,91 @@ body {
 }
 
 /* end services */
+/* start resume */
+.resume {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.resume .header-resume h3 {
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+.resume .header-resume .icon {
+    margin-right: 10px;
+    font-size: 23px;
+    color: var(--primary-color);
+}
+
+.resume .box-resume {
+    background-color: var(--white-color);
+    box-shadow: 0 0 5px 0 #cdcdcd;
+    padding: 15px 30px;
+    width: 100%;
+    position: relative;
+}
+
+.resume .box-resume::before {
+    content: "";
+    position: absolute;
+    border: 1px solid var(--primary-color);
+    width: 85%;
+    top: 99%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+}
+
+.resume .box-resume:hover::before {
+    width: 100%;
+}
+
+.resume .box-resume span {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.resume .box-resume h4 {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 19px;
+}
+.resume .box-resume p{
+    width: 320px;
+}
+@media(min-width:768px){
+    .resume .box-resume {
+        background-color: var(--white-color);
+        box-shadow: 0 0 5px 0 #cdcdcd;
+        padding: 15px 30px;
+        width: 100%;
+        position: relative;
+    }
+    .resume .box-resume p{
+        width: 100%;
+    }
+}
+@media(min-width:992px){
+    .resume .box-resume {
+        background-color: var(--white-color);
+        box-shadow: 0 0 5px 0 #cdcdcd;
+        padding: 15px 30px;
+        width: 90%;
+        position: relative;
+    }
+    .resume .box-resume p{
+        width: 100%;
+    }
+}
+/* end resume */
+/* start portfolio */
+.portfolio{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f7f7f7;
+}
+/* end portfolio */
 /*start keyframes */
 
 
